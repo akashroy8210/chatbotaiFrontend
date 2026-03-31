@@ -26,7 +26,7 @@ function ResponseAi({
         setQuery('')
         setStep(2)
         try {
-            const res = await api.post('/users/ai/new-chat', {
+            const res = await api.post('/api/users/ai/new-chat', {
                 userMessage:currentQuery,
                 chatId
              })
