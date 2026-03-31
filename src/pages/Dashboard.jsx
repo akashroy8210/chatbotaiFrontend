@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ResponseAi from '../component/ResponseAi'
-import Sidebar from '../component/sidebar'
+import Sidebar from '../component/Sidebar'
 import api from "../server/api"
 function Dashboard() {
   const [messages, setMessages] = useState([])
