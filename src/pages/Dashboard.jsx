@@ -15,7 +15,7 @@ function Dashboard() {
   useEffect(()=>{
     const fetchChats=async()=>{
       try{
-        const res=await api.get('/users/ai/chats')
+        const res=await api.get('/api/users/ai/chats')
         setChats(res.data?.chats||[])
 
       }catch(error){
