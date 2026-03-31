@@ -17,7 +17,7 @@ function Signup() {
         try {
             setLoading(true)
             
-            const res = await api.post('/users/signup', { name, email, password })
+            const res = await api.post('/api/users/signup', { name, email, password })
             setStep(2)
             setError("")
             login(res.data.token)
@@ -30,7 +30,7 @@ function Signup() {
     const handleVerify = async () => {
         try {
             setLoading(true)
-            const res = await api.post('/users/verify-otp', { email, otp })
+            const res = await api.post('/api/users/verify-otp', { email, otp })
             // localStorage.setItem('token',res.data.token)
             setError("")
             console.log("user verified successfully")
