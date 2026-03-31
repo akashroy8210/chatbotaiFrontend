@@ -14,7 +14,7 @@ function Login() {
     try {
       setLoading(true)
       setError('')
-      const res = await api.post('/users/login', { email, password })
+      const res = await api.post('/api/users/login', { email, password })
       localStorage.setItem("user", JSON.stringify(res.data.data))
       login(res.data.token)
       navigate('/dashboard')
