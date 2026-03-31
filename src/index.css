@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.markdown p {
+  margin: 6px 0;
+  line-height: 1.75rem;
+  letter-spacing: 0.3px;
+}
+
+.markdown ul {
+  padding-left: 20px;
+}
+
+.markdown code {
+  background: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+body{
+  scrollbar-width: none;
+}
+.markdown hr{
+  margin: 20px 0;
+}
+hr,strong,h2,h3,h4,h5,p,ul,ol{
+  margin: 1rem 0;
+}
