@@ -108,7 +108,7 @@ function ResponseAi({
                                             {
                                                 code({inline,children}){
                                                     return inline ?(
-                                                        <code className='bg-gray-700 p-4 rounded-lg overflow-x-auto'>
+                                                        <code className='bg-slate-400 border border-gray-300 p-4 rounded-lg overflow-x-auto'>
                                                             {children}
                                                         </code>
                                                     ):(
